@@ -1,0 +1,31 @@
+
+Complete the main method to find whether a given 3-digit number is an Armstrong number or not.
+
+An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. For example, 371 is an Armstrong number since 3^3 + 7^3 + 1^3 = 371.
+
+Following requirements should be taken care in the program.
+Input should be taken through Console
+Program should print the output as described in the Example Section below
+If the number is not 3 digit output should show as INVALID_INPUT
+
+Example
+Sample Input 1:
+371
+Expected Output:
+ARMSTRONG
+Sample Input 2:
+832
+Expected Output:
+NOT ARMSTRONG
+Sample Input 3:
+153
+Expected Output:
+ARMSTRONG
+Sample Input 4:
+963
+Expected Output:
+NOT ARMSTRONG
+Sample Input 5:
+45
+Expected Output:
+INVALID_INPUT

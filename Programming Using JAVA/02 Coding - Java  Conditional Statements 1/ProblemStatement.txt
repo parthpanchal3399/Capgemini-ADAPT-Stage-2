@@ -1,0 +1,62 @@
+Complete the main method of Source class to accept marks of a student in physics,chemistry and mathematics. Calculate average marks and display the grade based on the following criteria.
+
+averageMarks>=70             DISTINCTION
+averageMarks>=60             FIRST
+averageMarks>=50             SECOND
+averageMarks>=40             THIRD
+averageMarks<40              FAIL
+
+
+Following requirements should be taken care in the program.
+Input should be taken through Console separated by space or new line
+Input marks as integer values.
+Program should print the output as described in the Example Section below
+If any of the marks value is lesser than zero or greater than 100 then the output should show as INVALIDMARKS
+
+Hints/Tips
+Accept input from the console using Scannner Accept each input value separated by space or in a separate line.
+
+
+Example
+Sample Input 1:	
+45
+67
+89
+
+Expected Output:
+FIRST
+Sample Input 2:
+24
+45
+34
+
+Expected Output:
+FAIL
+Sample Input 3:  
+ 80
+ 90
+ 87
+
+Expected Output :
+DISTINCTION
+Sample Input 4:	    
+-44
+ 34
+78
+
+Expected Output :
+INVALIDMARKS
+Sample Input : 5
+45
+46
+51
+
+Expected Output :
+THIRD
+Sample Input: 60
+104
+90
+80
+
+Expected Output:
+INVALIDMARKS

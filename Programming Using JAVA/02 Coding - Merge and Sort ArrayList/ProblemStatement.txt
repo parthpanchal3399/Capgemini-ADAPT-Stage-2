@@ -1,0 +1,30 @@
+Problem Statement: Merge and Sort List:
+Create a static method named mergeAndSort in the class Source as given below
+Method should read two integer List's, containing 5 elements each, as input
+Merge the two List's and sort the merged List in ascending order
+Fetch the elements at 2nd, 6th and 8th index into a new List and return the List.(index starts from 0)
+Method should throw IllegalArgumentException, if the input list does not contain exactly 5 elements or if the input list is null
+Note: The input lists should not be modified in the method
+
+Complete the main method as given below:
+Input should be accepted using console
+Accept 10 integers and create two List's each containing 5 integers
+Display the returned ArrayList
+Refer sample output for formatting specifications.
+
+Hint: Use List interface as input and output parameter data type
+
+
+Example
+Sample Input:
+3 1 17 11 19
+5 2 7 6 20
+
+Sample Output:
+[3, 11, 19]
+Sample Input:
+1 2 3 4 5
+6 7 8 9 10
+
+Sample Output:
+[3, 7, 9]   

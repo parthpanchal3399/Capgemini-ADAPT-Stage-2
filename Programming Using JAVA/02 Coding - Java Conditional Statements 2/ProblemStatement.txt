@@ -1,0 +1,27 @@
+Complete the main method of the class Source with appropriate code to accept all the 3 sides of a triangle and display if the triangle is a right angle triangle or not.
+
+A right angle triangle is a triangle whose sum of squares of two sides will result in the square of the third side.
+
+Following requirements should be taken care in the program.
+Input should be taken through Console
+Program should print the output as described in the Example Section below
+The input values representing sides of the triangle must be accepted in the decreasing order of their length.
+Take sides as integers.
+
+Example
+Sample Input 1:
+5 4 3 
+Expected Output:
+RIGHT ANGLE 
+Sample Input 2:
+7 6 5 
+Expected Output:
+NOT RIGHT ANGLE 
+Sample Input 3:
+13 12 5
+Expected Output:
+RIGHT ANGLE
+Sample Input 4:
+4 6 8
+Expected Output:
+INVALID_INPUT

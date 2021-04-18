@@ -1,0 +1,13 @@
+Write a program to get the input gender as String and pass as input to switch case to display the Customers with respect to gender also display "No Customers Available" when the gender not found.
+
+Sample Input
+female
+
+Sample Output
+Bharathi
+
+Rekah
+
+Priya
+
+Akansha

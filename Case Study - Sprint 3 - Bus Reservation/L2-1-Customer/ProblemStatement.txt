@@ -1,0 +1,62 @@
+Write a program to get the input as a String and store it in a two dimensional array as customer details.
+
+customer details array variable should have the customer size of 5 and the attributes of 3.
+
+Example
+String customerArray=new String[5][3]
+
+Details of the customers are customerId , name and city.
+
+Example
+customerDetails[0][0]="1001";
+
+customerDetails[0][1]="Raj";
+
+customerDetails[0][2]="Chennai";
+
+customerDetails[1][0]="1008";
+
+customerDetails[1][1]="Akshay";
+
+customerDetails[1][0]="Pune";
+
+..................
+
+...................
+
+
+Sort the customer details based on the customerId;
+
+Sample Input
+100
+Rajan
+Chennai
+20
+Rakesh
+Hyderabad
+30
+Pardeep
+Delhi
+10
+Akansha
+Pune
+101
+Shilpa
+Bangalore
+
+Sample Output
+10
+Akansha
+Pune
+20
+Rakesh
+Hyderabad
+30
+Pardeep
+Delhi
+100
+Rajan
+Chennai
+101
+Shilpa
+Bangalore

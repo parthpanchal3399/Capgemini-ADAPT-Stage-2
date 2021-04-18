@@ -1,0 +1,20 @@
+Write a program to get the input as customer city and search the customer in a given array. this program should print "No Record Found" if the city is not available in the given array.
+
+note:use Binary search algorithm
+
+Sample Input
+Chennai
+
+Sample Output
+1001
+Raj
+Chennai
+1005
+Ganesh
+Chennai
+
+Sample Input
+Madurai
+
+Sample Output
+No Record Found

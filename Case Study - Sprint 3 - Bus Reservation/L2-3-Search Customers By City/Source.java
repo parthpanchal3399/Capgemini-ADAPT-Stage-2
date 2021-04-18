@@ -26,26 +26,26 @@ public class Source {
         customerDetails[4][1]="Ganesh";
         customerDetails[4][2]="Chennai";
     }
-    
+	
 	public static void main(String args[] ) throws Exception {
 	    Scanner sc = new Scanner(System.in);
 	    Source o = new Source();
 	    String key = sc.nextLine();
-        boolean flag = false;
-        for(int i=0; i<customerDetails.length; i++)
-        {
-            if(customerDetails[i][2].equalsIgnoreCase(key))
-            {
-                for(int j=0; j<3; j++)
-                {
-                    System.out.println(customerDetails[i][j]);
-                    flag = true;
-                }
-            }
-        }
-        if(!flag)
-        {
-            System.out.println("No Record Found");
-        }
+		boolean flag = false;
+		for(int i=0; i<customerDetails.length; i++)
+		{
+		    if(customerDetails[i][2].equalsIgnoreCase(key))
+		    {
+			for(int j=0; j<3; j++)
+			{
+			    System.out.println(customerDetails[i][j]);
+			    flag = true;
+			}
+		    }
+		}
+		if(!flag)
+		{
+		    System.out.println("No Record Found");
+		}
 	}
-}
+	}

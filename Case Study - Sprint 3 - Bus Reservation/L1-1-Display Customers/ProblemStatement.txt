@@ -1,0 +1,13 @@
+Create a program to accept 5 customer’s name in an array and display customer’s name in ascending order
+
+Sample Input:
+Raj
+Kumar
+Ganesh
+Akshay
+Rakesh
+
+Sample Output:
+Akshay
+Ganesh
+Kumar

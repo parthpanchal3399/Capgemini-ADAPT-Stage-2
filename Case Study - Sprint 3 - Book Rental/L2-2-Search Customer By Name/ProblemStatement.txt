@@ -1,0 +1,15 @@
+Write a program to get the input as customer name and search the customer in a given array. this program should print "No Record Found" if the name is not available in the given array.
+
+Sample Input
+Gaurav
+
+Sample Output
+1204
+Gaurav
+Delhi
+
+Sample Input
+Shakthi
+
+Sample Output
+No Record Found

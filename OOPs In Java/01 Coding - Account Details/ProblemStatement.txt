@@ -1,0 +1,48 @@
+Complete the class Account and AccountDetails as per the below requirement
+
+class Account :
+
+Create the following instance/static members:
+
+-accountNo : int
+-balance : double
+-accountType : String
+-counter :int static
+
+Define a parameterized constructor with two parameters to initialize balance and accountType. accountNo should be initialized by incrementing counter.
+
+Implement the below operations:
+-void depositAmount(double amount)
+-To add amount to account balance
+-void printAccountDetails()
+-To display account details as per format given in Example Section
+
+class AccountDetails :
+
+-Create main method and follow the below instructions.
+-Accept balance, account type and amount as input for two account objects from Console(Refer Example section for input format)
+-create first object using the input data and display account details
+-Deposit amount using the input data and display the new account balance
+-create second account object using the input data and display account details.
+-Set account balance to new balance using input data and display the new account balance
+
+
+Example
+Sample Input:
+100.5 Savings 25.5				// balance type amount for first account
+200 Current 50.5				// balance type amount for second account
+
+Expected Output:
+[Acct No : 1, Type : Savings, Balance : 100.5]
+New Balance : 126.0
+[Acct No : 2, Type : Current, Balance : 200.0]
+New Balance : 50.5
+Sample Input:
+0 Current 100
+0 Current 50
+
+Expected Output:
+[Acct No : 1, Type : Current, Balance : 0.0]
+New Balance : 100.0
+[Acct No : 2, Type : Current, Balance : 0.0]
+New Balance : 50.0

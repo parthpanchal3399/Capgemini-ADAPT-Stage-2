@@ -1,0 +1,37 @@
+Create a class "Player" with the following members:
+
+-firstName: String
+-lastName: String
+-Player(firstName: String, lastName: String)
+-getName(): String
+-abstract getRating(): int
+The method getName() should return the fullname of the player which is a combination of firstName and lastName separated by a single space.
+
+Create a subclass "CricketPlayer" with the following members:
+
+-averageRuns: double
+-CricketPlayer(firstName: String, lastName: String, averageRuns: double)
+-getRating(): int
+
+The rating of a cricket player is based on the following slab:
+
+-if averageRuns > 55 then 7
+-if averageRuns > 50 then 6
+-if averageRuns > 40 then 5
+-if averageRuns > 30 then 3
+-if averageRuns > 20 then 2
+-if averageRuns <=20 then 1
+
+Create a subclss "FootballPlayer" with the following members:
+
+-goals: int
+-FootballPlayer(firstName: String, lastName: String, goals: int)
+-getRating(): int
+
+The rating of a football player is based on the following slab:
+
+-if goals > 20 then 5
+-if goals > 15 then 4
+-if goals > 10 then 3
+-if goals > 5 then 2
+-if goals <=5 then 1

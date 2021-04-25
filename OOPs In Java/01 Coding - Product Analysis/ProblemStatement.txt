@@ -1,0 +1,43 @@
+This exercise of Product Analysis is based on below two classes which are already provided. Refer and analyze these classes and do not edit them.
+
+1.Product - Class used to store information about a product
+2.ProductData - Contains a list of products as an array
+
+Create a class ProductService with the following static methods
+-findNameByCode(int): String
+-findMaxPriceProduct(String): Product 
+
+findNameByCode method : This method takes product code as a parameter and returns the name of the product from the list of products present in ProductData class. If no product is found for the given product, return null.
+
+findMaxPriceProduct : This method takes product category as a parameter and returns the product object having the maximum price in the category provided. If no product is found for the given category, return null.
+
+In the main method of class ProductAnalysis, do the following
+
+-Accept the inputs using Console as shown in the Example section
+-First input is choice based on which either of the static methods of ProductService class should be used
+-If the choice is 1, find the Name of the product by accepting the product code from user and display the name
+-if product is not found for given code display message "Product Not Found"
+-If the choice is 2, find the product having maximum price by accepting the product category from user. Display the product details as shown in Example section. case insensitive input for category can be provided by user.
+-If Product is not found for given category, display message "No products in given category"
+-If the choice is neither 1 or 2, display message "Invalid choice"
+
+Refer Example section for Input and output format
+
+Example
+Sample Input:
+1
+101
+
+Expected Output:
+keyboard
+1
+999
+
+Expected Output:
+Product Not Found
+Sample Input:
+2
+CLOthing
+
+Expected Output:
+105 | jeans | 2000.0

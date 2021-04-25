@@ -1,0 +1,33 @@
+Create class called Customer with fields customerId, name, city, phone and email.
+
+The customerId is of type "int" and others are of "String".
+
+Add a default constructor and an overloaded constructor with all fields.
+
+Provide getters and setters for all the fields.
+
+Finally, override the "equals" method with proper implementation.
+
+
+Testing
+//Parameterized Constructor
+Customer c1 = new Customer(1, "Vinod", "Bangalore", null, null);
+Customer c2 = new Customer(1, "Vinod", "Bangalore", null, null);
+
+//Equals
+c1.equals(c2) --> should return true
+c2.equals(c1) --> should return true
+
+//Setter and Equals
+c1.setEmail("vinod@mailinator.com");
+c1.equals(c2) --> should return false
+c2.equals(c1) --> should return false
+
+c2.setEmail("vinod@mailinator.com");
+c1.equals(c2) --> should return true
+c2.equals(c1) --> should return true
+
+//Default Constructor
+Customer c3 = new Customer();
+Customer c4 = new Customer();
+c3.equals(c4) --> should return true

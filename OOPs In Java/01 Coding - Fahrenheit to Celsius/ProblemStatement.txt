@@ -1,0 +1,53 @@
+Problem Statement - Utility Static Methods
+Complete the static methods in the class Utility as per following requirements
+
+Method fahrenheitToCelcius :
+
+-This method should convert farhenheit in to celcius based on the formula
+ [celcius = (farhenheit - 32) X 5 / 9]
+-The method takes farhenheit(double) as input parameter
+-Method should return calculated temperature celcius rounded to an integer
+
+Method getLevel :
+
+-Takes an integer array as input parameter
+-Should calculate the sum of all array elements and return a String as per below rules
+-HIGH - when sum is greater than or equal to 100, MEDIUM - when sum is greater than or equal to 70, LOW - when sum is less than 70
+
+Complete the main method in class Source as below
+
+-Program should take console input and call appropriate methods of Utility class based on the input
+-Input and Output sample formats are given below in Example section
+-First input should be option 1 or 2. Option 1 is for Celcius calculation;Option 2 for finding Level
+-In case of option 1, the second input should be temperature in farhenheit
+-In case of option 2, the second input should be number of elements in the array, followed by the array elements
+-In case of incorrect option, program should display 'Invalid Option'
+
+Example
+Sample Input:
+1				// Option
+100				// temperature in Farhenheit
+Expected Output:
+38
+Sample Input:
+1
+95.5
+Expected Output:
+35
+Sample Input:	
+2				// option
+3				// number of elements in array
+40				// array elements
+50				// array elements
+11				// array elements
+Expected Output:
+HIGH
+Sample Input:
+2
+4
+10
+20
+5
+10
+Expected Output:
+LOW

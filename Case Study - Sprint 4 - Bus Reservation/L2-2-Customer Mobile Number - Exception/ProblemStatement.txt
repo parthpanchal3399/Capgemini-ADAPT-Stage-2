@@ -1,0 +1,22 @@
+Modify the Setter method and the constructor of the Customer class to throw an InvalidPhoneNumberException if the length of the mobile number is less than 10 and the first digit of the mobile number is not between between 6 and 9.
+
+
+Sample Input
+870 0006
+
+Sample Output
+jnvalidPhoneNumberException
+
+.Customer.setPhoneNumber(Customer.java:)
+
+Sample Input
+
+
+5000078651
+
+
+
+Sample output
+jnvalidPhoneNumberException
+
+.Customer.setPhoneNumber(Customer.java:)

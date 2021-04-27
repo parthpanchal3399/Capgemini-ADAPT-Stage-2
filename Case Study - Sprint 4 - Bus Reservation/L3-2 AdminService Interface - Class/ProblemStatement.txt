@@ -1,0 +1,17 @@
+Create ServiceDetails class as per the given structure with Constructor , setter and getter methods for all the fields.
+Create the Interface as AdminService and include methods for CRUD operation
+Create the class AdminServiceImpl and implement the AdminSerivce Interface.
+AdminServiceImpl Class should have a static variable serviceDetailsArray with the Size of 5 when CRUD operation is performed the array should be updated for all the operations.
+throw ServiceDetailsNotFoundException for update,delete,search methods when the details is not available in the serviceDetails array, ServiceDetailsNotFoundException should extend RuntimeException class
+
+
+Method Signatures
+void createServiceDetails(ServiceDetails serviceDetails);
+ServiceDetails updateServiceDetails(ServiceDetails serviceDetails);
+void deleteServiceDetails(int id);
+ServiceDetails searchServiceDetails(int id);
+ServiceDetails[] getServiceDetailss();
+
+
+Note: use LocalDateTime object for deptDateTime and arrDateTime
+

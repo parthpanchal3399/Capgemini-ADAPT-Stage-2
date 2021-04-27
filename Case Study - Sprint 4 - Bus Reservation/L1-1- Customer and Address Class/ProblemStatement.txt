@@ -1,0 +1,8 @@
+Create Customer and Address class as per the given structure with setter and getter methods. Customer and Address classes are related with Has-a relationship.
+
+create a constructor for the Customer and Address with all the fields of the class.
+
+Override toString method to return all the fields using String concatenation.
+
+Example - toString Method of customer
+Customer [userId=101, emailId=raj@gmail.com, password=xxxxxx, firstName=Krithick, lastName=Rajan, city=Chennai, gender=Male, phoneNumber=9001018761, address=Address [city=Chennai, state=TamilNadu, zip=600075, country=India]]

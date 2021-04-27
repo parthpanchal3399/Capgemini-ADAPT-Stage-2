@@ -1,0 +1,14 @@
+Create Customer class as per the given structure with Constructor , setter and getter methods for all the fields including Address.
+Create the Interface as CustomerService and include methods for CRUD operation
+Create the class CustomerServiceImpl and implement the CustomerSerivce Interface.
+CustomerServiceImpl Class should have a static variable customerArray with the Size of 5 when CRUD operation is performed the array should be updated for all the operations.
+throw CustomerNotFoundException for update,delete,search methods when the customer details is not available in the customer array.
+CustomerNotFoundException should extend RuntimeException class
+
+
+Method Signatures
+    void createCustomer(Customer customer);
+	Customer updateCustomer(Customer customer);
+	void deleteCustomer(int id);
+	Customer searchCustomer(int id);
+	Customer[] getCustomers();

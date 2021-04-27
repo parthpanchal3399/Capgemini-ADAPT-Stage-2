@@ -1,0 +1,24 @@
+Modify the Setter method and the constructor of the Customer class to throw an InvalidNameException if the length of the firstName and lastName field is less than six and has numbers/ special characters
+
+
+
+Sample Input
+Ram
+
+Sample Output
+
+javax.naming.InvalidNameException
+
+.Customer.setFirstName(Customer.java:67)
+
+Sample Input
+
+
+Krithick@rajan
+
+
+
+Sample output
+javax.naming.InvalidNameException
+
+.Customer.setFirstName(Customer.java:67)

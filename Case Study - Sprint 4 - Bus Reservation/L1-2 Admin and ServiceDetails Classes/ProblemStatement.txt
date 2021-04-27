@@ -1,0 +1,12 @@
+Create ServiceDetails and Admin class as per the given structure with setter and getter methods.
+
+create a constructor for the ServiceDetails and Admin with all the fields of the class
+
+Override toString method to return all the fields using String concatenation for both ServiceDetails and Admin class.
+
+Example - toString Method of ServiceDetails
+
+ServiceDetails [serviceId=1001, busId=100, depDateTime=2021-03-12T15:30, arrDateTime=2021-03-13T16:30, arrCity=Mumbai, deptCity=Bangalore, cost=500.0, seatsLeft=20, totalSeats=50]
+
+
+Note: use LocalDateTime for deptDateTime and arrDateTime

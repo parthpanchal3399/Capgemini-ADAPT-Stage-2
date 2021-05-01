@@ -1,0 +1,46 @@
+Problem Statement - Colour Code Validator
+Main class Source should have the functionality to validate the input hexadecimal and decimal colour codes.
+
+Create two static methods in class ColourCodeValidator as per the below signature
+-validateHexCode(String):int
+-validateDecimalCode(String):int
+
+-Both the methods return 1 for valid codes and -1 for invalid codes. Rules for valid codes are given below
+
+
+Hexadecimal code rules
+
+-Format: #A1BC23
+-Must start with "#" symbol
+-Must contain six characters after #
+-It may contain alphabets from A-F or digits from 0-9
+
+Decimal code rules
+-Format: rgb(x,y,z)
+-x,y and z are values from 0 to 255 inclusive
+
+In the main method , do the following
+
+-Accept the inputs using Console as shown in the Example section
+-First input is choice based on which one of the static methods should be invoked
+-choice 1 is for validating the input hexadecimal colour code
+-choice 2 is for validating the input decimal colour code
+-Display Valid code or Invalid code based on the validation result
+-If the choice is neither 1 or 2, display message "Invalid choice"
+
+Example
+Sample Input:
+1 #ABCDEF
+
+Expected Output:
+Valid Code
+Sample Input:
+2 rgb(9,99,249)
+
+Expected Output:
+Valid Code
+Sample Input:
+9
+
+Expected Output:
+Invalid choice

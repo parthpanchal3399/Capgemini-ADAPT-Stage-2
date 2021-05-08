@@ -1,0 +1,26 @@
+Problem Statement: Day of Date
+In the class Source create the following public static method:
+- getDayOfDate(String): String	 
+
+-The input String to the method should be date in dd/mm/yyyy format
+-Method should return the day for the input date
+-Assume that input dates are valid as per format
+
+Do the following in the main method of Source class
+-Accept date string from the console
+-Display the day for that date
+
+
+Example
+Sample Input:
+14/1/2019
+
+Expected Output:
+Monday
+Sample Input:
+12/2/2019
+
+Expected Output:
+Tuesday
+Hints/Tips
+Use SimpleDateFormatter

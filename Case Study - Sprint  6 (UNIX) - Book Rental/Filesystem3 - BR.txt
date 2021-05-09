@@ -1,0 +1,40 @@
+Filesystem3 - BR
+DESCRIPTION
+Note: DO NOT use the RUN CODE button as this will result in an error as the files involved are created during the evaluation time. You can either use the VERIFY or the SUBMIT button.
+
+Tasks
+Write commands to create a directory “Chennai_br” in /opt/assests and create a file named "Chennai_customers_br.txt that contains the details of Chennai Customers in that directory. Details are available in customer_details_br.txt
+
+
+Sample Input Data
+/tmp/customer_details_br.txt:
+
+Userid    Emailid    Password    FirstName    Lastname    City    Gender    PhoneNumber
+10001    raj@gmail.com    xxxxxxx    Rajan    R    Bangalore    M    9555432100
+10002    kumar@gmail.com    xxxxxxx    Akshay    Kumar    Mumbai    M    9887642101
+10003    Kanishk@gmail.com    xxxxxxx    Kanishk    Shay    Bangalore    M    9886543210
+10004    Anjali@gmail.com    xxxxxxx    Anjali    Srivatsav    Pune    F    9882345001
+10005    Preethi@gmail.com    xxxxxxx    PreethiR    Ashwin    Chennai    F    9781234502
+10006    rakesh@gmail.com    xxxxxxx    Rakesh    Roy    Pune    M    9287654231
+10007    aditi@gmail.com    xxxxxxx    Aditi    Ras    Bangalore    F    9684327865
+10008    krithi@gmail.com    xxxxxxx    Krithik    Rajan    Chennai    M    9772347899
+10009    chandrav@gmail.com    xxxxxxx    Chandrav    Rajan    Bangalore    M    9227658026
+10010    karthick@gmail.com    xxxxxxx    Karthick    S    Mumbai    M    9337652855
+10012    akansha@gmail.com    xxxxxxx    Akansha    Singh    Pune    F    9228785472
+10013    gaurav@gmail.com    xxxxxxx    Gaurav    Kumar    Delhi    M    9007685422
+10011    aishwarya@gmail.com    xxxxxxx    Aishwarya    Rajesh    Bangalore    F    9776327644
+10014    ragavan@gmail.com    xxxxxxx    Ragavan    R    Chennai    M    9338987655
+10015    sharmila@gmail.com    xxxxxxx    Sharmila    Prasath    Bangalore    M    9335258711
+10016    kannan@gmail.com    xxxxxxx    Kannan    Shekawath    Bangalore    F    9665834866
+10017    sunil@gmail.com    xxxxxxx    Sunil    Shan    Mumbai    M    9665467544
+10018    naveen@gmail.com    xxxxxxx    Naveen    R    Chennai    M    9556874587
+10019    mothy@gmail.com    xxxxxxx    Mothy    Rajan    Chennai    M    9003346842
+10020    shilpa@gmail.com    xxxxxxx    Shilpa    S    Mumbai    F    9334876944
+
+SOLUTION
+cd /opt/assets
+mkdir Chennai_br
+cd Chennai_br
+touch Chennai_customers_br.txt
+cp /tmp/customer_details_br.txt Chennai_customers_br.txt
+

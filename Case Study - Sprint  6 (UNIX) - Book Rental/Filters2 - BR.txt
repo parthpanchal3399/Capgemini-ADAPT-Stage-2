@@ -1,0 +1,45 @@
+Filters2 - BR
+
+DESCRIPTION
+Note: DO NOT use the RUN CODE button as this will result in an error as the files involved are created during the evaluation time. You can either use the VERIFY or the SUBMIT button.
+
+
+Tasks
+Write a command to create a report on the books that cost Rs.1000 from book_details.txt file.
+
+File names and its contents are case sensitive
+
+
+Sample Input Data
+/tmp/book_details.txt:
+
+
+Book ID    Title    Available_Quantity    Stock    Author    Price    Rent_Per_Day
+50001    Head First Java    30    50    Kathy Siera    1000    50
+50002    Machine Learning    20    25    Christoper    1000    25
+50003    AI    10    15    Yousha    1500    30
+50004    Neural Networks    20    25    Bishop    1500    40
+50005    The Scarlet Letter    10    20    Nathanial    500    10
+50006    Wings of Fire    50    100    APJ Abdul Kalam    500    25
+50007    Ignited Minds    20    40    APJ Abdul Kalam    400    20
+50008    The Story of My Experiments with Truth    10    20    Mahathma Gandhi    500    20
+50009    Major Barbara    20    30    Bernad Shaw    400    20
+50010    History of the Indian Currency and Banking    10    20    BR Ambedkar    400    15
+50011    Snow Flower and the Secret Fan    10    20    Lisa See    500    20
+50012    The Foundations of Leninism    5    10    Joseph Stalin    300    10
+50013    C#8.0 and .NET Core3.0    20    30    Mark J. Price    2000    50
+50014    Building Microservices    25    50    Sam Newman    500    20
+50015    Clean Architecture    20    30    Robert C Martin    500    20
+50016    THE DEVILS WIND    20    30    Manohar    300    20
+50017    RISE OF CHOLA    10    30    JayaKumar    400    10
+50018    The Secret    10    25    Rhonda Byrne    400    20
+50019    You Can    20    30    George Mathew Adams    500    20
+50020    Clarity is Power    20    20    Mahatria Ra    800    25
+
+Sample Output 
+50001	Head First Java 1000
+50002	Machine Learning    1000
+
+SOLUTION:
+cat /tmp/book_details.txt | grep "1000" | awk -F "\t" '{print $1 $2 $6}'
+

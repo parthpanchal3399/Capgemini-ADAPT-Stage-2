@@ -1,0 +1,54 @@
+Filters5 - BR
+DESCRIPTION
+Note: DO NOT use the RUN CODE button as this will result in an error as the files involved are created during the evaluation time. You can either use the VERIFY or the SUBMIT button.
+
+
+
+Tasks
+Write a command to display the list of the books which was returned on 30-Dec-20
+
+File names and its contents are case sensitive
+
+
+
+Sample Input Data
+/tmp/bookrentaldetails.txt:
+
+
+
+Rentalid           Userid    UserName    Bookid    Bookname    Quantity    Rentalstartdate    Rentalenddate    Totalamount    Returnstatus    Returndate
+30001    10005    PreethiR    50002    Machine Learning    2    25-Nov-20    30-Nov-20    150    yes    30-Dec-20
+30003    10007    Aditi    50010    History of the Indian Currency and Banking    1    05-Dec-20    30-Dec-20    390    no    
+30002    10006    Rakesh    50004    Neural Networks    2    20-Nov-20    30-Nov-20    440    yes    30-Nov-20
+30004    10010    Karthick    50014    Building Microservices    1    05-Dec-20    14-Dec-20    200    yes    14-Dec-20
+30005    10016    Kannan    50020    Clarity is Power    1    20-Dec-20    30-Dec-20    220    yes    30-Dec-20
+30006    10016    Kannan    50014    Building Microservices    2    20-Dec-20    30-Dec-20    220    yes    30-Dec-20
+30007    10012    Akansha    50010    History of the Indian Currency and Banking    1    20-Nov-20    30-Nov-20    165    no    
+30008    10011    Aishwarya    50007    Ignited Minds    2    15-Dec-20    30-Dec-20    320    no    
+30009    10011    Aishwarya    50015    Clean Architecture    1    12-Dec-20    17-Dec-20    110    yes    17-Dec-20
+30010    10012    Akansha    50009    Major Barbara    2    30-Nov-20    15-Dec-20    320    yes    15-Dec-20
+30011    10001    Rajan    50004    Neural Networks    2    23-Nov-20    30-Nov-20    320    yes    30-Nov-20
+30012    10003    Kanishk    50010    History of the Indian Currency and Banking    1    12-Dec-20    30-Dec-20    135    no    
+30013    10005    PreethiR    50014    Building Microservices    1    17-Dec-20    24-Dec-20    160    yes    14-Dec-20
+30014    10007    Aditi    50020    Clarity is Power    1    13-Dec-20    30-Dec-20    425    yes    30-Dec-20
+30015    10009    Chandrav    50014    Building Microservices    2    20-Dec-20    30-Dec-20    220    yes    30-Dec-20
+30016    10011    Aishwarya    50010    History of the Indian Currency and Banking    1    20-Nov-20    30-Nov-20    165    no    
+30017    10013    Gaurav    50007    Ignited Minds    2    15-Dec-20    30-Dec-20    320    no    
+30018    10015    Sharmila    50015    Clean Architecture    1    12-Dec-20    17-Dec-20    110    yes    17-Dec-20
+30019    10017    Sunil    50009    Major Barbara    2    30-Nov-20    15-Dec-20    320    yes    15-Dec-20
+30020    10004    Anjali    50007    Ignited Minds    2    15-Dec-20    30-Dec-20    320    no    
+30021    10004    Anjali    50015    Clean Architecture    1    12-Dec-20    17-Dec-20    110    yes    17-Dec-20
+30022    10004    Anjali    50009    Major Barbara    2    30-Nov-20    15-Dec-20    320    yes    15-Dec-20
+30023    10004    Anjali    50015    Clean Architecture    1    22-Dec-20    27-Dec-20    120    yes    27-Dec-20
+30024    10005    PreethiR    50015    Clean Architecture    1    02-Dec-20    17-Dec-20    320    yes    17-Dec-20
+30025    10006    Rakesh    50015    Clean Architecture    1    12-Dec-20    15-Dec-20    80    yes    15-Dec-20
+
+Expected solution output:
+Machine Learning	30-Dec-20
+Clarity is Power	30-Dec-20
+Building Microservices	30-Dec-20
+Clarity is Power	30-Dec-20
+Building Microservices	30-Dec-20
+
+SOLUTION
+awk -F "\t" '$11=="30-Dec-20"' /tmp/bookrentaldetails.txt | awk -F "\t" '{print $5 "\t" $11}'

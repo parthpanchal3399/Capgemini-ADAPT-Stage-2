@@ -1,0 +1,48 @@
+//Note the question is completely wrong!!
+
+DESCRIPTION
+1.  Provide login facility for admin and customer. After successful login, display respective console dashboards (menu). Now user can perform his respective actions.
+
+2 get the console input from the user 1 for Customer and 2 for Admin , Name and password to validate the user based on the role functionalities should be display as below.
+
+Note: Customer Class and Admin class structure is given , need not to modify the structure 
+
+Customers
+
+1.Display Services
+
+2.BookingDetails of the logged in Customer.
+
+
+
+Admin
+
+1.Insert ServicDetails
+
+2.Update ServiceDetails
+
+3.Delete ServiceDetails
+
+4,Search ServiceDetails
+
+Note:﻿Create the classess as per the given structure in the document
+
+
+Sample Input
+1
+Krithick
+xxxxxxxx﻿
+
+Sample output
+1.DisplayServices
+2.BookingDetails 
+
+Sample Input
+2
+admin
+xxxxxxxxxxxx
+Sample output﻿﻿﻿﻿﻿ 
+1.Insert ServiceDetails
+2.Update ServiceDetails
+3.Delete ServiceDetails
+4.Search ServiceDetails

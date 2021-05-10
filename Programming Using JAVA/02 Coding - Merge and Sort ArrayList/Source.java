@@ -7,11 +7,17 @@ public class Source {
 	    List<Integer> al2 = new ArrayList<Integer>();
 	    for(int i=0; i<5; i++)
 	    {
-	        al1.add(sc.nextInt());
+	        if(sc.hasNextLine())
+	        	al1.add(sc.nextInt());
+	        else
+	        	throw new IllegalArgumentException();
 	    }
 	    for(int i=0; i<5; i++)
 	    {
-	        al2.add(sc.nextInt());
+	        if(sc.hasNextLine())
+	        	al2.add(sc.nextInt());
+	        else
+	        	throw new IllegalArgumentException();
 	    }
 	    System.out.println(mergeAndSort(al1, al2));
 	}

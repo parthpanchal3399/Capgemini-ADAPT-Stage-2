@@ -1,11 +1,14 @@
 import java.util.Scanner;
 public class Source {
     public static void main(String[] args) {
-        int a,b,c;
+        int a=0,b=0,c=0;
         Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        b = sc.nextInt();
-        c = sc.nextInt();
+        if(sc.hasNextLine())
+            a = sc.nextInt();
+        if(sc.hasNextLine())
+            b = sc.nextInt();
+        if(sc.hasNextLine())
+            c = sc.nextInt();
         if(a > b && a > c && b > c)
         {
             if( Math.pow(b,2) + Math.pow(c,2) == Math.pow(a,2) )

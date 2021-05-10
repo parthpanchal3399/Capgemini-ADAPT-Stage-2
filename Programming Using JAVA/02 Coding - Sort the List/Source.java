@@ -14,6 +14,7 @@ public class Source {
     
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
-	    System.out.println(sort(sc.nextLine()));
+	    if(sc.hasNextLine())
+	    	System.out.println(sort(sc.nextLine()));
 	}
 }

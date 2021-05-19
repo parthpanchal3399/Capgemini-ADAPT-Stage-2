@@ -12,12 +12,12 @@ public class Source {
 		Scanner sc = new Scanner(System.in);
 		String[][] s = new String[5][3];
 		for(int i = 0; i < 5; i++)
-	    	s[i][0] = "0";
+			s[i][0] = "0";
 		
 		for(int i = 0; i < 5; i++)
 		    for(int j = 0; j < 3; j++)
 				if(sc.hasNextLine())
-		        	s[i][j] = sc.nextLine();
+					s[i][j] = sc.nextLine();
 		        
         for(int i = 0; i < 4; i++) {
             for(int j = 0; j < 4 - i; j++) {

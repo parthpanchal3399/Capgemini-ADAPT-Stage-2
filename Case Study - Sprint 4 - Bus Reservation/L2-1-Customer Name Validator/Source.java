@@ -7,12 +7,10 @@ class Customer
     private String firstName;
     private String lastName;
     
-    //default constructor
     Customer()
     {
     }
     
-    //parameterized constructor
     Customer(String firstName, String lastName) throws InvalidNameException
     {
     	
@@ -20,13 +18,8 @@ class Customer
     	{
     		throw new InvalidNameException();
     	}
-    	else
-    	{
-    		this.firstName = firstName;
-    		this.lastName = lastName;
-    	}
-        
-    	Pattern pattern = Pattern.compile("[A-Za-z]");
+    	
+    	Pattern pattern = Pattern.compile("[^A-Za-z]");
     	Matcher matcher1 = pattern.matcher(firstName);
     	Matcher matcher2 = pattern.matcher(lastName);
     	boolean isSpChar1 = matcher1.find();
@@ -41,9 +34,10 @@ class Customer
     		this.firstName = firstName;
     		this.lastName = lastName;
     	}
-    }
     
-    //getters
+}
+
+    
     public String getFirstName()
     {
         return this.firstName;
@@ -61,12 +55,8 @@ class Customer
     	{
     		throw new InvalidNameException();
     	}
-    	else
-    	{
-    		this.firstName = a;
-    	}
     	
-    	Pattern pattern = Pattern.compile("[A-Za-z]");
+    	Pattern pattern = Pattern.compile("[^A-Za-z]");
     	Matcher matcher1 = pattern.matcher(a);
     	boolean isSpChar1 = matcher1.find();
     	if(isSpChar1)
@@ -85,12 +75,7 @@ class Customer
     	{
     		throw new InvalidNameException();
     	}
-    	else
-    	{
-    		this.lastName = a;
-    	}
-    	
-    	Pattern pattern = Pattern.compile("[A-Za-z]");
+    	Pattern pattern = Pattern.compile("[^A-Za-z]");
     	Matcher matcher2 = pattern.matcher(a);
     	boolean isSpChar2 = matcher2.find();
     	if(isSpChar2)
@@ -101,9 +86,12 @@ class Customer
     	{
     		this.lastName = a;
     	}
-    }
+    	
+    	
+    	
+    	
     
-    //toString
+    }
     @Override
     public String toString()
     {
@@ -111,4 +99,3 @@ class Customer
     }
     
 }
-//No need to create main class as it's not checked in the test cases

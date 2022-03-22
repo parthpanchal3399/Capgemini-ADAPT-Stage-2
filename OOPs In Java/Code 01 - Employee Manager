@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+//,Manager class
+class Manager{
+    public Manager()
+    {
+        
+    }
+}
+
+//Iworker interface
+interface IWorker{
+    void setWork(String w);
+    String manageWork();
+}
+
+//Employee class
+class Employee implements IWorker{
+    String w;
+    @Override
+    public void setWork(String w)
+    {
+        this.w=w;
+        
+    }
+    @Override
+    public String manageWork()
+    {
+        
+        return  this.w+" Working";
+    }
+    
+}
+
+// Security class 
+class Security implements IWorker{
+   String w;
+   @Override
+   public void setWork(String w)
+    {
+        this.w=w;
+    }
+    @Override
+    public String manageWork()
+    {
+        return  this.w+" Watching";
+    }
+}
+
+public class Source{
+	public static void main(String[] args){
+		//write code here
+		
+	Scanner in=new Scanner(System.in);
+	String x=in.nextLine();
+	if(x.equals("Security"))
+	{
+	Security security=new Security();
+	security.setWork(x);
+    String op=security.manageWork();
+	System.out.println(op);
+	    
+	}
+	else if(x.equals("Employee"))
+	{
+	Employee employee=new Employee();
+	employee.setWork(x);
+	String op=employee.manageWork();
+	System.out.println(op);
+	}
+	
+	}
+}
